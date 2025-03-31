@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="switch.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +17,35 @@
             <img src="img//search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="search-icon">
             <input type="text" name="" id="search" placeholder="Search City ....">
         </div>
+        <div class="weather-area">
+            <section class="left">
+            <span id="country"><i class="fa-solid fa-location-dot"></i>Kosovo</span>
+            <section id="date-day">
+            <h1 id="day">Monday</h1>
+            <p id="date">24-12-2025</p>
+        </section>
+            <h1 id="temp-celc">26°C</h1>
+            <h1 id="temp-f">22</h1>
+        </section>
+        <section class="right">
+        <label for="input" class="toggle-switch">
+            <input type="checkbox" id="toggle" onchange="toggleButtonColor()">
+        </label>
+            <span class="slider"></span>
+            <img src="img/WeatherIcon - 1-39.png" alt="" id="weather-icon">
+          
+            <h1 id="desc">Cloudy</h1>
+            <p id="desc-p">Feels like 26</p>
+        </section>
+        </div>
+    
+    
     </div>
+
+
+
+
+
   
 </body>
 <script src="main.js"></script>
