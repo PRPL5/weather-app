@@ -3,19 +3,24 @@ body{
     margin: 0   ;
     background-color: #060C1A;
     font-family: "Inter", sans-serif;
-
+   
 }
 
 
 .content{
+    padding: 14px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     gap: 20px;
-    padding: 16px;
+    max-width: 1024px;
+    margin: 0 auto;
 }
-
+#submit{
+    background-color: inherit;
+    color: inherit;
+    border: 0 solid;
+}
 #search{
     
     background-color: inherit;
@@ -24,9 +29,19 @@ body{
     color: #FFFFFF;
     padding-left: 20px;
 }
+
 #search:focus{
     outline: none;
 }
+#search:active{
+    outline: none;
+}
+#search:any-link{
+    outline: none;
+}
+
+
+
 
 .search{
     margin: 0 auto;
@@ -88,7 +103,7 @@ font-size:14px;
     justify-content: space-around;
 }
 
-#day{
+#time{
     font-size: 40px;
     font-weight: 400;
     margin-top: 40px;
@@ -99,10 +114,11 @@ font-size:14px;
     font-size: 16px;
     font-weight: 300;
 }
-#temp-celc{
+#temp{
     font-weight: 400;
     font-size: 60px;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 #temp-f{
@@ -125,10 +141,13 @@ font-size:14px;
 }
 
 #temp-metric{
+    display: block;
     height: 35px;
-    max-width: 88px;
+    min-width: 88px;
     border-radius: 20px;
-    color: green;
+    border: 0 solid;
+
+    
 }
 #desc{
     font-size: 32px;
