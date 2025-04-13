@@ -9,10 +9,7 @@ body{
 
 .content{
     padding: 14px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 20px;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -71,14 +68,14 @@ body{
     background-color: #0E1421;
     color: #FFFFFF;
     padding: 29px 29px 27px 27px;
-
+    margin-top: 20px;
 }
 .left{
     display:flex;
     flex-direction: column;
 }
 #country{
-    max-width: 80px;
+    max-width: 90px;
     font-size: 12px;
     display: flex;
     gap: 7px;
@@ -90,11 +87,14 @@ body{
     background-color: #742BEC;
     height: 35px;
     border-radius: 20px;
-    font-weight: 300;
+    font-weight: 800;
 }
 #country > i{
 font-size:14px;
 
+}
+#address{
+    padding: 0px 0 3px 0 ;
 }
 
 .date-day{
@@ -105,17 +105,17 @@ font-size:14px;
 
 #time{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 40px;
     margin-bottom: 0;
 }
 #date{
     margin-top: 0;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
 }
 #temp{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 60px;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -134,10 +134,11 @@ font-size:14px;
 }
 
 #weather-icon{
-    height: 120px;
-    width: 160px;
+    height: 140px;
+    width: 140px;
     padding: 0;
     margin: 0;
+    margin-top: 10px;
 }
 
 #temp-metric{
@@ -146,18 +147,23 @@ font-size:14px;
     min-width: 88px;
     border-radius: 20px;
     border: 0 solid;
+    margin-top: 10px;
+    font-weight: 700;
 
     
 }
 #desc{
+    word-wrap: break-word;
     font-size: 32px;
-    font-weight: 300;
-    margin-top: 20px;
+    font-weight: 500;
+    margin-top: 0;
     margin-bottom: 0;
+    width: 300px;
+    text-align: end;
 }
 
 #desc-p{
     margin-top: 0;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 500;
 }
