@@ -3,15 +3,21 @@ body{
     margin: 0   ;
     background-color: #060C1A;
     font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
    
 }
 
 
 .content{
+    display: flex;
+    flex-direction: column;
     padding: 14px;
     justify-content: center;
     max-width: 1024px;
     margin: 0 auto;
+ 
 }
 #submit{
     background-color: inherit;
@@ -38,7 +44,18 @@ body{
 }
 
 
-
+.top{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+}
 
 .search{
     margin: 0 auto;
@@ -75,7 +92,8 @@ body{
     flex-direction: column;
 }
 #country{
-    max-width: 90px;
+    min-width: 90px;
+    max-width: 120px;
     font-size: 12px;
     display: flex;
     gap: 7px;
@@ -166,4 +184,126 @@ font-size:14px;
     margin-top: 0;
     font-size: 14px;
     font-weight: 500;
+}
+
+.weather-area-2{
+    width: 500px;
+    height: 280px;
+    border-radius: 30px;
+    background-color: #0E1421;
+    color: #FFFFFF;
+    padding: 29px 29px 27px 27px;
+    margin-top: 20px;
+}
+
+.weekday{
+    font-size:15px ;
+    font-weight: 500;
+}
+
+
+.day{
+    background-color: #1c2433;
+
+    width: 55px;
+    height: 150px;
+    border:1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.day-img{
+    align-self: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+.weather-area-right{
+   
+    width: 260px;
+    height: 338px;
+    background-color: #14203A;
+    border-radius: 20px;
+    margin-top: 20px;
+    
+
+}
+
+
+.sun > h1{
+    color: #676B73;
+    padding-top: 10px;
+    margin-left: 15px;
+    font-size: 20px;
+ 
+
+}
+.sun > p{
+    margin-left: 15px;
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+}
+.cities{
+     display: flex;
+    flex-direction: column;
+    gap :10%;
+    width: 260px;
+    height: 338px;
+    border-radius: 20px;
+    /* padding: 29px 29px 27px 27px; */
+    margin-top: 20px;
+    color: white;
+}
+.city{
+
+    max-width: 100%;
+    height: 45%;
+    border: 1px solid black;
+    background-color: #1c2433;
+    border-radius: 20px;
+    padding-left: 20px;
+
+}
+.city > h1{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 32px;
+
+font-weight: 600;
+}
+.city-frame{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+}
+
+
+.city-frame > p{
+font-size: 20px;
+font-weight: 700;
+width: 50%;
+
+
+}
+
+
+.city-frame > img{
+    width: 100px;
+    height: 100px;
+
+
 }

@@ -1,48 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Weather APP</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="content">
-        <div class="search">
-            <button id="submit"> <img src="img//search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="" class="search-icon"></button>
-           
-            <input type="text" name="" id="search" placeholder="Search City ...." >
-        </div>
-        <div class="weather-area">
-            <section class="left">
-            <p id="country"><i class="fa-solid fa-location-dot"></i><span id="address"></span></p>
-            <section id="date-day">
+      <div class="search">
+        <button id="submit">
+          <img
+            src="img//search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt=""
+            class="search-icon"
+          />
+        </button>
+
+        <input type="text" name="" id="search" placeholder="Search City ...." />
+      </div>
+     <section class="top">
+       
+      <div class="weather-area">
+        <section class="left">
+          <p id="country">
+            <i class="fa-solid fa-location-dot"></i><span id="address"></span>
+          </p>
+          <section id="date-day">
             <h1 id="time"></h1>
             <p id="date"></p>
-        </section>
-            <h1 id="temp"><span id="temp-value"></span>°<span id="temp-metrics">C</span></h1>
+          </section>
+          <h1 id="temp">
+            <span id="temp-value"></span>°<span id="temp-metrics">C</span>
+          </h1>
         </section>
         <section class="right">
-            <button id="temp-metric" onclick="tempChange();">Celcius</button>
-            <img src="" alt="" id="weather-icon">
-          
-            <h1 id="desc"></h1>
-            <p id="desc-p">Feels like <span id="desc-temp"></span>°<span id="desc-temp-metrics"></span></p>
+          <button id="temp-metric" onclick="tempChange();">Celcius</button>
+          <img src="" alt="" id="weather-icon" />
+
+          <h1 id="desc"></h1>
+          <p id="desc-p">
+            Feels like <span id="desc-temp"></span>°<span
+              id="desc-temp-metrics"
+            ></span>
+          </p>
         </section>
         
+      </div>
+      <div class="weather-area-right">
+        <div class="sun">
+          <h1>Sunrise</h1>
+          <p id="sunrise"> </p>
+          <h1>Sunset</h1>
+          <p id="sunset"></p>
+          <h1>Day Length</h1>
+          <p id="length"></p>
         </div>
-  
-    
+      </div>
+     </section>
+
+<section class="bottom">
+      <div class="weather-area-2">
+        <h1 class="title">This Week</h1>
+        <div class="days" id="days">
+          
+       
+        </div>
+
+       
+
+      </div>
+      <div class="cities">
+        <div class="city">
+          <h1><span id="temperature1"></span> <span id="temperature-m"></span></h1>
+
+          <section class="city-frame">
+          <p id="address-1"></p>
+
+          <img src="img/partly_cloudy.png" alt="" id="icon-1">
+          </section>
+        </div>
+
+        <div class="city">
+          <h1><span id="temperature2"></span> <span id="temperature-m2"></span></h1>
+
+          <section class="city-frame">
+          <p id="address-2"></p>
+          <img src="img/partly_cloudy.png" alt="" id="icon-2">
+          </section>
+        </div>
+      </div>
+    </section>
     </div>
-
-
-
-  
-</body>
-<script src="main.js"></script>
+  </body>
+  <script src="main.js"></script>
 </html>
